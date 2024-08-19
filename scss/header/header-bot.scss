@@ -1,0 +1,33 @@
+.header-bot{
+    width: 100%;
+    background-color: $backgrColorHeaderBot;
+    position: fixed;
+    z-index: 3;
+}
+
+.header-bot-container{
+    height: 50px;
+    display: flex;
+}
+
+.header-bot-menu {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+
+.header-bot-list{
+    display:flex;
+    gap: 3.5rem;
+    padding-right: 13%;
+    li{
+        font-family: $headerFont;
+        font-size: 14px;
+    }
+}
+
+.header-bot-img{
+    padding-left: 3.5rem;
+}

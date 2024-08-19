@@ -1,0 +1,29 @@
+
+.header-top {
+    background-color: $backgrColorHeaderTop;
+    padding-right: 10%;
+}
+.header-container{
+    width: 100%;
+}
+.header-top-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 1rem;
+    padding: 10px 15px 10px 15px;
+    a{
+        color: $mainColor;
+        font-family: $headerFont;
+        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16.34px;
+    }
+}
+.header-top-icon{
+    display:flex;
+    gap: 10px;
+}
+
+
