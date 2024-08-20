@@ -1,0 +1,16 @@
+// COMMON
+@import "./common/reset";
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/root";
+
+// COMPONENTS
+@import "font/font";
+
+
+@import "./component/header/header";
+
+
+@import "slider/slider";
+@import "about/about";
+

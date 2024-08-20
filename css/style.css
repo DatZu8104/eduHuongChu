@@ -58,68 +58,54 @@ a {
   text-decoration: none; /* Loại bỏ gạch chân */
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 12px;
+  margin: 0 auto;
+}
+
 .header-top {
   background-color: #0B4A78;
-  padding-right: 10%;
 }
-
-.header-container {
-  width: 100%;
-}
-
-.header-top-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
-  padding-right: 1rem;
-  padding: 10px 15px 10px 15px;
-}
-.header-top-container a {
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16.34px;
-}
-
-.header-top-icon {
-  display: flex;
-  gap: 10px;
-}
-
-.header-bot {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
-  position: fixed;
-  z-index: 3;
-}
-
-.header-bot-container {
-  height: 50px;
-  display: flex;
-}
-
-.header-bot-menu {
+.header-top-inner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
+  gap: 0.8rem;
+  padding: 8px 0;
 }
-
-.header-bot-list {
+.header-top-contact {
   display: flex;
-  gap: 3.5rem;
-  padding-right: 13%;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
 }
-.header-bot-list li {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+.header-top-link {
+  color: white;
 }
-
-.header-bot-img {
-  padding-left: 3.5rem;
+.header-top-link:nth-child(2) {
+  position: relative;
+  padding-left: 12px;
 }
-
+.header-top-link:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 1px;
+  background-color: #fff;
+}
 .main-page-home {
   height: 1000px;
   font-family: "Open Sans", sans-serif;
@@ -199,12 +185,4 @@ a {
   transform: translate(427%, 282%);
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
