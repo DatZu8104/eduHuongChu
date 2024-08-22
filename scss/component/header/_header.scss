@@ -11,8 +11,7 @@
       @include flex-center();
     }
 
-    &-icons {
-    }
+
 
     &-link {
       color: white;
@@ -35,6 +34,34 @@
     }
   }
 
-  &-bottom {
+  &-bot {
+    background-color: $backgrColorHeaderBot;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+    &-inner{
+      @include flex-between;
+    }
+
+    &-list{
+      @include flex-between;
+      gap: 2rem;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.menu{
+  &-nav{
+    &:hover{
+      color: $mainColorText;
+    }
+    
+    &:nth-child(3)::after,
+    &:nth-child(5)::after {
+      content: "\25BE";
+    }
+
   }
 }

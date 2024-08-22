@@ -1,0 +1,48 @@
+.main-page-home{
+    height: 1000px;
+    font-family: $headerFont;
+}
+
+.slider-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    img {
+        max-width: 100%;
+    }
+}
+
+.slider{
+
+    &-text {
+    left: 2rem;
+    top: 10rem;
+
+
+        &-title{
+            color: $mainColorText;
+            font-weight: 700;
+            font-size: 4.4rem;
+        }
+
+        &-para{
+            margin: 3rem 0 7rem;
+            line-height: 1.7rem;
+            max-width: 35rem;
+            font-size: 1rem;
+        }
+    }
+    
+    &-but{
+        @include button(#fff,#0B4A78);
+        width: 12vw;
+    }
+
+}
+
+.wrap-content{
+    width:100%;
+    top:17%;
+    
+    position: absolute;
+}
