@@ -30,6 +30,8 @@
             left: 56%;
             top: 9%;
             z-index: 1;
+            
+
         }
 
         &-2{
@@ -62,10 +64,36 @@
 }
 
 .section-right{
-
+    padding-left: 3rem;
+    padding-top: 9rem;
+    top: 10%;
     &-title{
-        color: #fff;
+        color: $mainColor;
+        font-family: 'Playfair Display';
+        position: relative;
+        font-size: 3rem;
+        font-weight: 600;
+
+        &::after{
+            display: block;
+            width: 10rem;
+            content: "";
+            position: absolute;
+            height: 1px;
+            background-color: $mainColor;
+            top: calc(100% + 10px);
+        }
     }
 
+    &-para{
+        margin: 4.8rem 2rem 4.2rem 0;
+        color: $mainColor;
+        line-height: 1.4;
+    }
     
+    &-but{
+        @include button(#fff,#0B4A78);
+        background-color: #fff;
+        color: $mainColorText;
+    }
 }

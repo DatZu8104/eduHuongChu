@@ -172,7 +172,6 @@ a {
   border-radius: 50px;
   cursor: pointer;
   max-width: fit-content;
-  width: 12vw;
 }
 .slider-but:hover {
   color: #fff;
@@ -236,8 +235,119 @@ a {
   z-index: 1;
 }
 
+.section-right {
+  padding-left: 3rem;
+  padding-top: 9rem;
+  top: 10%;
+}
 .section-right-title {
   color: #fff;
+  font-family: "Playfair Display";
+  position: relative;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.section-right-title::after {
+  display: block;
+  width: 10rem;
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #fff;
+  top: calc(100% + 10px);
+}
+.section-right-para {
+  margin: 4.8rem 2rem 4.2rem 0;
+  color: #fff;
+  line-height: 1.4;
+}
+.section-right-but {
+  background-color: #DAA761;
+  color: #fff;
+  width: max-content;
+  padding: 15px 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  max-width: fit-content;
+  background-color: #fff;
+  color: #DAA761;
+}
+.section-right-but:hover {
+  color: #fff;
+  background-color: #0B4A78;
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .container {
+    width: fit-content;
+  }
+  .header-bot-list {
+    font-size: 1.05rem;
+  }
+  .slider-text {
+    left: 2rem;
+    top: 1rem;
+    position: absolute;
+  }
+  .slider-text-title {
+    font-size: 2rem;
+  }
+  .slider-text-para {
+    margin: 1rem 0 1rem;
+    line-height: 1.7rem;
+    max-width: 35rem;
+    font-size: 1rem;
+  }
+  .section-left-img-about {
+    transform: scale(0.75);
+    z-index: 2;
+  }
+  .section-left-img-about-1 {
+    left: 60%;
+    top: -2%;
+  }
+  .section-left-img-about-2 {
+    top: 7%;
+    left: -16%;
+  }
+  .section-left-img-about-3 {
+    top: 34%;
+    right: -26%;
+  }
+  .section-left-group-1 {
+    left: 21%;
+    top: 10%;
+    z-index: 1;
+    transform: scale(0.8);
+  }
+  .section-left-group-1 {
+    left: 19%;
+    top: 9%;
+    z-index: 1;
+    transform: scale(0.8);
+  }
+  .section-left-group-2 {
+    top: 31%;
+    right: 0%;
+    z-index: 1;
+    transform: scale(0.8);
+  }
+  .section-right-title {
+    font-size: 2rem;
+    top: -4%;
+  }
+  .section-right-para {
+    top: -7%;
+    position: relative;
+  }
+  .section-right-but {
+    top: -10%;
+    position: relative;
+  }
+  .slider-but {
+    padding: 10px 23px;
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
