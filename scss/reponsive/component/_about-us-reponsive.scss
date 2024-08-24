@@ -1,0 +1,61 @@
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .section{
+        &-left{
+
+            &-img-about{
+                transform: scale(0.75);
+                z-index: 2;
+
+                &-1{
+                    left: 60%;
+                    top: -2%;
+                }
+
+                &-2{
+                    top: 7%;
+                    left: -16%;  
+                }
+
+                &-3{
+                    top: 34%;
+                    right: -26%;  
+                }
+            }
+
+            &-group{
+
+                &-1{
+                    left: 19%;
+                    top: 9%;
+                    z-index: 1;
+                    transform: scale(0.8);
+                }
+
+                &-2{
+                    top: 31%;
+                    right: 0%;
+                    z-index: 1;
+                    transform: scale(0.8);   
+                }
+            }
+        }
+
+        &-right{
+            
+            &-title{
+                font-size: 2rem;
+                top: -4%; 
+            }
+
+            &-para{
+                top: -7%;
+                position: relative; 
+            }
+
+            &-but{
+                top: -10%;
+                position: relative;
+            }
+        }
+    }
+}

@@ -278,12 +278,11 @@ a {
 }
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-  .container {
-    width: fit-content;
-  }
   .header-bot-list {
     font-size: 1.05rem;
   }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
   .slider-text {
     left: 2rem;
     top: 1rem;
@@ -298,6 +297,12 @@ a {
     max-width: 35rem;
     font-size: 1rem;
   }
+  .slider-but {
+    padding: 10px 23px;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
   .section-left-img-about {
     transform: scale(0.75);
     z-index: 2;
@@ -313,12 +318,6 @@ a {
   .section-left-img-about-3 {
     top: 34%;
     right: -26%;
-  }
-  .section-left-group-1 {
-    left: 21%;
-    top: 10%;
-    z-index: 1;
-    transform: scale(0.8);
   }
   .section-left-group-1 {
     left: 19%;
@@ -344,9 +343,10 @@ a {
     top: -10%;
     position: relative;
   }
-  .slider-but {
-    padding: 10px 23px;
-    font-size: 0.8rem;
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .container {
+    width: fit-content;
   }
 }
 

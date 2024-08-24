@@ -1,0 +1,27 @@
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .slider{
+        
+        &-text{
+            left: 2rem;
+            top: 1rem;
+            position: absolute;
+
+            &-title{
+                font-size: 2rem;
+
+            }
+
+            &-para{
+                margin: 1rem 0 1rem;
+                line-height: 1.7rem;
+                max-width: 35rem;
+                font-size: 1rem;  
+            }
+        }
+
+        &-but {
+            padding: 10px 23px; 
+            font-size: 0.8rem;   
+        }
+    }
+}
