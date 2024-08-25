@@ -1,17 +1,12 @@
-@import "./component/header-reponsive";
-@import "./component/slider-reponsive";
-@import "./component/about-us-reponsive";
+//import reponsive table
+@import "./component-table/header-reponsive";
+@import "./component-table/slider-reponsive";
+@import "./component-table/about-us-reponsive";
 
+//import reponsive mobile
+@import "./component-mobile/header-reponsive";
+@import "./component-mobile/slider-reposive";
+@import "./component-mobile/about-us-reponsive";
 
-// Mobile: width < 740px;
-@media only screen and (max-width: 46.1875em) {
-    
-}
-
-
-// Table: 740px <= width < 1024px;
-@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-    .container{
-        width:fit-content;
-    }
-}
+//import reponsive root
+@import "root-reponsive";

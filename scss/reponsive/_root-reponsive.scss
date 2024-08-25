@@ -1,0 +1,15 @@
+
+// Mobile: width < 740px;
+@media only screen and (max-width: 46.1875em) {
+    .container{
+        width:fit-content;
+    }
+}
+
+
+// Table: 740px <= width < 1024px;
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+    .container{
+        width:fit-content;
+    }
+}

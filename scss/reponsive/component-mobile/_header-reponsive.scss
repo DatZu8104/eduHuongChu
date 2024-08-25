@@ -1,0 +1,19 @@
+//Mobile 407-480
+@media only screen and (min-width: 407px) and (max-width: 480px) {
+    .header-bot-menu{
+        display: none;
+    }
+}
+
+// Mobile <406
+@media only screen and (max-width: 406px) {
+    .header{
+        &-top{
+            font-size: 0.8em;
+        }
+
+        &-bot-menu{
+            display:none;
+        }
+    }
+}

@@ -1,0 +1,154 @@
+
+//Mobile 407-480
+@media only screen and (min-width: 407px) and (max-width: 480px) {
+    .about-us{
+        &::after{
+            display: none;
+        }
+    }
+
+    .section{
+        
+        &-left{
+            z-index: 1;
+
+            &-img-about{
+                opacity: 0.3;
+                transform: scale(0.5);
+                z-index: 2;
+
+                &-1{
+                    left: 68%;
+                    top: -17%;
+                }
+
+                &-2{
+                    top: 0%;
+                    left: -56%;  
+                }
+
+                &-3{
+                    top: 32%;
+                    right: -122%; 
+                }
+            }
+
+            &-group{
+                opacity: 0.3;
+                &-1{
+                    left: -14%;
+                    top: 15%;
+                    z-index: 1;
+                    transform: scale(0.7);
+                }
+
+                &-2{
+                    top: 32%;
+                    right: -37%;
+                    z-index: 1;
+                    transform: scale(0.8); 
+                }
+            }
+        }
+
+        &-right{
+            z-index: 2;
+            padding-left: 2rem;
+            flex: none;
+            transform: translate(-3%, -2%);
+            width: 90%; 
+
+            &-title{
+                font-size: 1.5rem;
+                top: -4%; 
+            }
+
+            &-para{
+                top: -7%;
+                position: relative; 
+            }
+
+            &-but{
+                top: -10%;
+                position: relative;
+            }
+        }
+    }
+
+}
+
+// Mobile <406
+@media only screen and (max-width: 406px) {
+    .about-us{
+        &::after{
+            display: none;
+        }
+    }
+
+    .section{
+        &-left{
+            z-index: 1;
+
+            &-img-about{
+                opacity: 0.3;
+                transform: scale(0.5);
+                z-index: 2;
+
+                &-1{
+                    left: 68%;
+                    top: -17%;
+                }
+
+                &-2{
+                    top: 0%;
+                    left: -56%;  
+                }
+
+                &-3{
+                    top: 32%;
+                    right: -122%; 
+                }
+            }
+
+            &-group{
+                opacity: 0.3;
+                &-1{
+                    left: -14%;
+                    top: 15%;
+                    z-index: 1;
+                    transform: scale(0.7);
+                }
+
+                &-2{
+                    top: 32%;
+                    right: -37%;
+                    z-index: 1;
+                    transform: scale(0.8); 
+                }
+            }
+        }
+
+        &-right{
+            z-index: 2;
+            padding-left: 2rem;
+            flex: none;
+            transform: translate(-3%, -2%);
+            width: 90%; 
+
+            &-title{
+                font-size: 1.5rem;
+                top: -4%; 
+            }
+
+            &-para{
+                top: -7%;
+                position: relative; 
+            }
+
+            &-but{
+                top: -10%;
+                position: relative;
+            }
+        }
+    }
+}
