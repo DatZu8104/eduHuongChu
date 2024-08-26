@@ -10,14 +10,22 @@
         left: 0;
         clip-path: ellipse(63% 82% at 50% 101%);
     }
+
     position: relative;
     width: 100%;
     background-color: $mainColorText;
     height:100%;
+    
     &-inner{
         @include flex-between;
         height:100%;
+        
     }
+}
+
+.about-us > .container{
+    position: relative;
+    top: -16%;
 }
 
 .section{
@@ -108,3 +116,15 @@
         color: $mainColorText;
     }
 }
+
+.arrow{
+    @include arrow;
+    left: 48%;
+    top: -11%;
+}
+
+.arrow{
+    
+    
+}
+

@@ -32,3 +32,40 @@
     align-items: center;
     gap: $gap;
 }
+
+@mixin arrow{
+    background-color: $mainColorText;
+    border-radius: 999px;
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        border-radius: 999px;
+        background-color: rgba(251, 246, 239, 0.3);
+        top: 11%;
+        left: 15%;
+        z-index: 1;
+        
+    }
+    .icon-arrow::before {
+        content: "";
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        background-image: url('../../assets/icon/arrow.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        z-index: 2;
+    }
+
+    
+}
+
