@@ -81,24 +81,20 @@
         top: -7%;
         width: 4rem;
         height: 4rem;
-    }
 
-    .arrow .icon-arrow::before {
-        
-        width: 2rem;
+        .icon-arrow::before{
+            width: 2rem;
+            }
     }
 
 }
 
 // Mobile <406
 @media only screen and (max-width: 406px) {
-    .about-us{
-        &::after{
-            display: none;
-        }
-    }
+    
 
     .section{
+
         &-left{
             z-index: 1;
 
@@ -125,6 +121,7 @@
 
             &-group{
                 opacity: 0.3;
+
                 &-1{
                     left: -14%;
                     top: 15%;
@@ -159,9 +156,21 @@
             }
 
             &-but{
+                padding: 11px 24px;
                 top: -10%;
                 position: relative;
             }
+        }
+    }
+
+    .arrow{
+        left: 40%;
+        top: -8%;
+        width: 4rem;
+        height: 4rem;
+
+        .icon-arrow::before{
+            width: 2rem;
         }
     }
 }

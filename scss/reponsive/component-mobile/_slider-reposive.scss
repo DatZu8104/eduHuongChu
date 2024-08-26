@@ -11,12 +11,23 @@
         &-banner{
             height: 500px;
             position: relative;
+
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    object-position: 62% 50%;
+                }
         }
+
         &-text{
             &-title{
                 font-size: 1.5rem;
 
             }
+
             &-para{
                 font-size: 0.7rem;
                 transform: translate(0px, -37px);}
@@ -31,37 +42,52 @@
             
         }
     }
-    .slider-banner img {
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        object-position: 62% 50%;
-    }
+
 }
 
 // Mobile <406
 @media only screen and (max-width: 406px) {
-
+    .wrap-content{
+        top: 28%;
+    }
 
     .slider{
+        height: 400px;
+
+        &-banner{
+            height: 100%;
+            position: relative;
+
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    object-position: 62% 50%;
+                }
+        }
+
         &-text{
+
             &-title{
                 font-size: 1.5rem;
 
-
             }
+            
             &-para{
                 font-size: 0.7rem;
-                transform: translate(1px, -13px);
+                transform: translate(1px, 8px);
                 margin: 1rem 0px 3rem;
                 line-height: 1.3rem;
             }
         }
 
         &-but{
-            display:none;
+            padding: 9px 15px;
+            border-radius: 50px;
+            position: absolute;
+            font-size: 0.6rem;
         }
     }
 }

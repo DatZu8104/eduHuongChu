@@ -421,6 +421,14 @@ a {
     height: 500px;
     position: relative;
   }
+  .slider-banner img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: 62% 50%;
+  }
   .slider-text-title {
     font-size: 1.5rem;
   }
@@ -435,6 +443,18 @@ a {
     font-size: 0.8rem;
     bottom: 27%;
   }
+}
+@media only screen and (max-width: 406px) {
+  .wrap-content {
+    top: 28%;
+  }
+  .slider {
+    height: 400px;
+  }
+  .slider-banner {
+    height: 100%;
+    position: relative;
+  }
   .slider-banner img {
     max-width: 100%;
     width: 100%;
@@ -443,19 +463,20 @@ a {
     position: absolute;
     object-position: 62% 50%;
   }
-}
-@media only screen and (max-width: 406px) {
   .slider-text-title {
     font-size: 1.5rem;
   }
   .slider-text-para {
     font-size: 0.7rem;
-    transform: translate(1px, -13px);
+    transform: translate(1px, 8px);
     margin: 1rem 0px 3rem;
     line-height: 1.3rem;
   }
   .slider-but {
-    display: none;
+    padding: 9px 15px;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 0.6rem;
   }
 }
 @media only screen and (min-width: 407px) and (max-width: 480px) {
@@ -528,9 +549,6 @@ a {
   }
 }
 @media only screen and (max-width: 406px) {
-  .about-us::after {
-    display: none;
-  }
   .section-left {
     z-index: 1;
   }
@@ -582,8 +600,18 @@ a {
     position: relative;
   }
   .section-right-but {
+    padding: 11px 24px;
     top: -10%;
     position: relative;
+  }
+  .arrow {
+    left: 40%;
+    top: -8%;
+    width: 4rem;
+    height: 4rem;
+  }
+  .arrow .icon-arrow::before {
+    width: 2rem;
   }
 }
 @media only screen and (max-width: 46.1875em) {
