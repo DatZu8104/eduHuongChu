@@ -1,8 +1,17 @@
 
 //Mobile 407-480
 @media only screen and (min-width: 407px) and (max-width: 480px) {
+    .wrap-content{
+        top: 28%;
+    }
 
     .slider{
+        height: 500px;
+
+        &-banner{
+            height: 500px;
+            position: relative;
+        }
         &-text{
             &-title{
                 font-size: 1.5rem;
@@ -10,17 +19,25 @@
             }
             &-para{
                 font-size: 0.7rem;
-                transform: translate(1px, -37px);}
+                transform: translate(0px, -37px);}
         }
 
         &-but{
-            padding: 5px 5px;
+            padding: 10px 20px;
             border-radius: 50px;
             position: absolute;
-            top: 33%;
             font-size: 0.8rem;
-            left: 75%;
+            bottom: 27%;
+            
         }
+    }
+    .slider-banner img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        object-position: 62% 50%;
     }
 }
 

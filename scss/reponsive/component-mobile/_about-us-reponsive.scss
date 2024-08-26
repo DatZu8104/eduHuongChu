@@ -3,7 +3,8 @@
 @media only screen and (min-width: 407px) and (max-width: 480px) {
     .about-us{
         &::after{
-            display: none;
+            clip-path: ellipse(78% 82% at 50% 101%);
+            transform: translate(0%, -42%);
         }
     }
 
@@ -73,6 +74,18 @@
                 position: relative;
             }
         }
+    }
+
+    .arrow{
+        left: 41%;
+        top: -7%;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .arrow .icon-arrow::before {
+        
+        width: 2rem;
     }
 
 }

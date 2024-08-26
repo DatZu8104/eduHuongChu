@@ -19,6 +19,8 @@
     &-inner{
         @include flex-between;
         height:100%;
+        position: relative;
+        z-index: 2;
         
     }
 }
@@ -119,12 +121,6 @@
 
 .arrow{
     @include arrow;
-    left: 48%;
-    top: -11%;
+    left: 45%;
+    top: -10%;
 }
-
-.arrow{
-    
-    
-}
-

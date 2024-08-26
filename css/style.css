@@ -108,9 +108,9 @@ a {
   background-color: #fff;
 }
 .header-bot {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 .header-bot-inner {
@@ -207,6 +207,8 @@ a {
   align-items: center;
   gap: 0.8rem;
   height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .about-us > .container {
@@ -300,8 +302,8 @@ a {
   width: 6rem;
   height: 6rem;
   position: relative;
-  left: 48%;
-  top: -11%;
+  left: 45%;
+  top: -10%;
 }
 .arrow::after {
   content: "";
@@ -409,20 +411,37 @@ a {
   }
 }
 @media only screen and (min-width: 407px) and (max-width: 480px) {
+  .wrap-content {
+    top: 28%;
+  }
+  .slider {
+    height: 500px;
+  }
+  .slider-banner {
+    height: 500px;
+    position: relative;
+  }
   .slider-text-title {
     font-size: 1.5rem;
   }
   .slider-text-para {
     font-size: 0.7rem;
-    transform: translate(1px, -37px);
+    transform: translate(0px, -37px);
   }
   .slider-but {
-    padding: 5px 5px;
+    padding: 10px 20px;
     border-radius: 50px;
     position: absolute;
-    top: 33%;
     font-size: 0.8rem;
-    left: 75%;
+    bottom: 27%;
+  }
+  .slider-banner img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    object-position: 62% 50%;
   }
 }
 @media only screen and (max-width: 406px) {
@@ -441,7 +460,8 @@ a {
 }
 @media only screen and (min-width: 407px) and (max-width: 480px) {
   .about-us::after {
-    display: none;
+    clip-path: ellipse(78% 82% at 50% 101%);
+    transform: translate(0%, -42%);
   }
   .section-left {
     z-index: 1;
@@ -496,6 +516,15 @@ a {
   .section-right-but {
     top: -10%;
     position: relative;
+  }
+  .arrow {
+    left: 41%;
+    top: -7%;
+    width: 4rem;
+    height: 4rem;
+  }
+  .arrow .icon-arrow::before {
+    width: 2rem;
   }
 }
 @media only screen and (max-width: 406px) {
